@@ -28,4 +28,4 @@ RUN docker-php-ext-enable sqlsrv pdo_sqlsrv
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
 
 #build log
-echo "AZURE-COMPOSER `date '+%Y-%m-%d %H:%M:%S'`" >> /var/mydockerlog
+RUN echo "AZURE-COMPOSER `date '+%Y-%m-%d %H:%M:%S'`" >> /var/mydockerlog
