@@ -1,7 +1,7 @@
 # PHP Image for Azure and Composer
 # To build execute in the current folder:
 #    docker build -t local:azurecomposer .
-FROM php:7.1-apache
+FROM php:7.2-apache
 COPY php.ini /usr/local/etc/php/
 RUN docker-php-ext-install pdo pdo_mysql mysqli bcmath
 
